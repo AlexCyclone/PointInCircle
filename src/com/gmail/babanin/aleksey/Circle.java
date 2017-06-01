@@ -11,6 +11,10 @@ public class Circle {
         this.centreCoordinateX = centreCoordinateX;
         this.centreCoordinateY = centreCoordinateY;
 
+        if (radius < 0) {
+            throw new IllegalArgumentException("radius must be positive");
+        }
+        
         this.radius = radius;
     }
 
